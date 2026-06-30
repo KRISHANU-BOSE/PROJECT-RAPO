@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    position: relative;
+    font-family: Arial, sans-serif;
+    background: url("https://static.vecteezy.com/system/resources/previews/049/855/259/large_2x/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.a,.b,.c,.d,.e {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: aqua;
+    padding: 20px;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    transition: all 0.4s ease;
+}
+.rotate {
+    display: inline-block;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+}
+.a:hover,.b:hover,.c:hover,.d:hover,.e:hover {
+    background-color: #0F172A;
+    cursor: pointer;
+    color: white;
+    border: 3px solid purple;
+    transform: scale(1.1)translateY(-10px);
+    box-shadow: 0 0 20px cyan;
+}
+.main {
+    display: grid;
+    overflow: hidden;
+    border: 5px solid greenyellow;
+    background-color: rgb(13, 46, 196);
+    height: 300px;
+    width: 600px;
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 30px;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    gap: 20px;
+    grid-template-areas:
+        "box-1 box-1 box-2 box-3"
+        "box-4 box-5 box-5 box-3";
+}
+
+.main:hover {
+    background-color: #36f2c6;
+    border: 3px solid blue;
+    transform: scale(1.1)translateY(20px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+header {
+    width: 100%;
+    background: linear-gradient(90deg, #0F172A, #1E3A8A);
+    padding: 15px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+.head {
+    width: 90%;
+    margin: auto;
+}
+marquee {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
