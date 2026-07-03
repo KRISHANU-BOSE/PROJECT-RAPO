@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    border: 3px solid #000000;
+    padding: 20px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.square-logo {
+    width: 24px;
+    height: 24px;
+    background-color: #1a1a1a;
+    border-radius: 4px;
+}
+
+.logo-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+nav {
+    font-size: 0.95rem;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 4px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-family: Arial, sans-serif;
+    color: #7a7a7a;
+    font-size: 0.9rem;
+}
+
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1.2fr;
+    border-top: 2px dashed #000000;
+    border-bottom: 2px dashed #000000;
+}
+
+
+.grid-section {
+    padding: 20px;
+}
+
+.projects-col {
+    border-right: 2px solid #000000;
+    padding-left: 0;
+}
+
+.center-col {
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #000000;
+}
+
+.experience-box {
+    border-bottom: 2px solid #000000;
+    flex: 1;
+}
+
+.opensource-box {
+    flex: 1;
+}
+
+.education-col {
+    padding-right: 0;
+}
+
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.05rem;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.link {
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
+.project-item {
+    border: 1px solid #000000;
+    padding: 8px 10px;
+    margin-bottom: -1px;
+
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    background-color: #fff;
+}
+
+
+.courses-title {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.courses-list {
+    list-style: none;
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+
+.reviews-section {
+    padding-top: 20px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.review-card {
+    flex: 1;
+    border: 2px solid #000000;
+    border-radius: 25px;
+
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.review-text {
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+.author-name,
+.author-title {
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    color: #999999;
+    margin-bottom: 0;
+}
