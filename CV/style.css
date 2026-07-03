@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -32,9 +36,10 @@ body {
 }
 
 header {
-
-    margin-bottom: 30px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 }
 
 header p {
@@ -86,7 +91,7 @@ h2 {
 
 h2:hover {
     color: #7331f7ec;
-    transform: translateX(10px)scale(1.05);
+    transform: translateX(5px)scale(1.05);
     text-shadow: 0 4px 10px rgba(115, 49, 247, 0.3);
 }
 
@@ -137,11 +142,14 @@ a:hover {
     height: auto;
     border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.2);
-    position: relative;
+    /*  position: relative;
     top: 30px;
-    left: 200px;
+    left: 200px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     text-shadow: 0 4px 10px rgba(115, 49, 247, 0.3);
-    transition: all 0.4 ease;
+    transition: all 0.4s ease;
     animation: glow 2s infinite alternate;
 }
 
@@ -287,4 +295,20 @@ footer {
         padding: 14px;
         font-size: 15px;
     }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 150px;
+        position: static;
+        margin: 20px auto;
+        /*displaayblock*/
+    }
+
+
+
 }
