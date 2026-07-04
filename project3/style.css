@@ -4,61 +4,127 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
-    background-color: #ffffff;
+    font-family: "Poppins", "Comic Sans MS", "Chalkboard SE", "sans-serif";
+    background: linear-gradient(270deg, #1bde55, #401791, #12ddfc);
+    background-size: 600% 600%;
+    max-width: 1200px;
+    margin: auto;
+    animation: bgMove 5s ease infinite;
     color: #000000;
     padding: 20px;
-    display: flex;
-    justify-content: center;
+    padding-top: 90px;
+
+
 }
 
-.container {
-    width: 100%;
-    max-width: 900px;
-    border: 3px solid #000000;
-    padding: 20px;
-}
+@keyframes bgMove {
+    0% {
+        background-position: 0% 50%;
+    }
 
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 header {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px;
+
+    padding: 15px 30px;
+
+    background: rgba(34, 112, 89, 0.708);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, .15);
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+
+    z-index: 1000;
 }
 
 .logo-area {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .square-logo {
-    width: 24px;
-    height: 24px;
-    background-color: #1a1a1a;
-    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    box-shadow: 0 0 15px rgba(0, 114, 255, .4);
 }
 
 .logo-text {
-    font-size: 1.1rem;
-    font-weight: 500;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 nav {
-    font-size: 0.95rem;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgb(106, 85, 241);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
 }
 
 nav a {
-    color: #000000;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
     text-decoration: none;
-    margin: 0 4px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    background: rgba(19, 99, 149, 0.808);
+    border: 2px solid rgba(41, 236, 197, 0.971);
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: white;
+    background: linear-gradient(135deg, #2563EB, #38BDF8);
+    transform: translateY(-5px);
+    border: none;
+    box-shadow:
+        0 12px 30px rgba(37, 99, 235, .45),
+        0 0 25px rgba(56, 189, 248, .35);
 }
+
+header:hover {
+
+    background: rgba(66, 232, 201, 0.94);
+     box-shadow:
+        0 12px 30px rgba(37, 99, 235, .45),
+        0 0 25px rgba(56, 189, 248, .35);
+
+
+}
+
+
 
 
 .hero {
@@ -67,23 +133,42 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    font-weight: normal;
+    font-size: 60px;
+    font-weight: 700;
+    color: #051aff;
+    border: 2px solid #12ddfc;
+    background: #12ddfc;
+    border-radius: 10px;
     margin-bottom: 10px;
-}
+    box-shadow:
+        4px 12px 30px rgba(13, 88, 251, 0.884),
+        10px 20px rgba(10, 172, 242, 0.953);
 
+}
+.hero h1:hover{
+    color: #0d90fcf7;
+    border: 2px solid #10f9edfa;
+    background-color: #00ff73;
+    box-shadow: 0px 12px 30px rgba(13, 88, 251, 0.884),
+       0 10px 20px rgba(10, 172, 242, 0.953);
+}
 .hero p {
     font-family: Arial, sans-serif;
-    color: #7a7a7a;
-    font-size: 0.9rem;
+    color: #f6e658;
+    font-size: 1.2rem;
 }
 
 
 .main-grid {
     display: grid;
     grid-template-columns: 1fr 1.2fr 1.2fr;
-    border-top: 2px dashed #000000;
-    border-bottom: 2px dashed #000000;
+    padding: 10px;
+    border-top: 3.5px dashed #c8f905;
+    border-bottom: 3px dashed #048cfc;
+    background: linear-gradient(to right, #bfe624, #1cf7c7);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
 }
 
 
@@ -92,10 +177,20 @@ nav a:hover {
 }
 
 .projects-col {
-    border-right: 2px solid #000000;
-    padding-left: 0;
+    border-right: 2px solid #084cf7;
+    text-align: center;
+    color: #f80472;
+    font-weight: bold;
 }
 
+.projects-col:hover{
+    color: #02fcb5;
+    border-radius: 10px;
+    font-size: 17px;
+    margin: 4px;
+    transform: scale(1.05);
+    background: linear-gradient(#fc1ab0,#ff9100);
+}
 .center-col {
     display: flex;
     flex-direction: column;
@@ -138,23 +233,39 @@ p {
 .link {
     font-family: Arial, sans-serif;
     font-size: 0.8rem;
+    font-weight: bold;
     color: #0066cc;
     text-decoration: none;
 }
 
 .link:hover {
     text-decoration: underline;
+    color: #ff5722;
 }
 
 
 .project-item {
-    border: 1px solid #000000;
+    border: 2px solid #0b4ad0;
     padding: 8px 10px;
-    margin-bottom: -1px;
-
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: #f8d0fc;
     font-family: Arial, sans-serif;
+    box-shadow:0px 10px 25px rgba(13, 88, 251, 0.884),
+    0 10px 10px rgba(10, 172, 242, 0.953);
     font-size: 0.85rem;
-    background-color: #fff;
+    background:linear-gradient(to right, #04fb4e ,#8a04fc);
+    transition: .3s;
+    cursor: pointer;
+
+}
+
+.project-item:hover {
+    transform: translateX(8px);
+    background: linear-gradient(to left, #6ad527 ,#0a02fb);
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
 }
 
 
@@ -186,9 +297,14 @@ p {
     flex: 1;
     border: 2px solid #000000;
     border-radius: 25px;
-
+    transition: .4s;
     padding: 20px;
     background-color: #ffffff;
+}
+
+.review-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .2);
 }
 
 .review-text {
@@ -203,4 +319,30 @@ p {
     font-size: 0.8rem;
     color: #999999;
     margin-bottom: 0;
+}
+
+@media(max-width:700px) {
+
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-col,
+    .center-col {
+        border-right: none;
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
 }
