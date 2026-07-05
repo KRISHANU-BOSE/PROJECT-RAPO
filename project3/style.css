@@ -90,6 +90,12 @@ nav {
     backdrop-filter: blur(10px);
     border-radius: 12px;
 }
+nav:hover{
+    background: linear-gradient(to right,#f20894f1,#07148ca2);
+    box-shadow: 3px 8px 15px rgba(7, 84, 251, 0.936),
+        3px 7px 15px rgba(4, 175, 248, 0.953);
+}
+
 
 nav a {
     display: inline-block;
@@ -209,13 +215,15 @@ header:hover {
     margin: 4px;
     transform: scale(1.05);
     background: linear-gradient(#09fab6, #038cfc);
+     border-left: 3px solid #fc02b9;
 }
 
 .education-col:hover {
     border-radius: 10px;
     margin: 4px;
     transform: scale(1.05);
-    background: linear-gradient(#09fab6, #038cfc);
+    background: linear-gradient(#09fa3d, #befc03);
+    border-left: 3px solid #fc02b9;
 }
 
 .experience-box {
@@ -315,7 +323,7 @@ p {
 
 .btn:hover {
     background: linear-gradient(to right, #fe08d1, #def603);
-    transform: translatey(-5px) scale(1.05);
+    transform: translatey(5px) scale(1.05);
     color: #021af3;
     font-size: 16px;
 }
