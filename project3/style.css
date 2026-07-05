@@ -90,8 +90,9 @@ nav {
     backdrop-filter: blur(10px);
     border-radius: 12px;
 }
-nav:hover{
-    background: linear-gradient(to right,#f20894f1,#07148ca2);
+
+nav:hover {
+    background: linear-gradient(to right, #f20894f1, #07148ca2);
     box-shadow: 3px 8px 15px rgba(7, 84, 251, 0.936),
         3px 7px 15px rgba(4, 175, 248, 0.953);
 }
@@ -176,7 +177,7 @@ header:hover {
     background: linear-gradient(to right, #bfe624, #1cf7c7);
     border-radius: 6px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+    box-shadow: 0 10px 25px rgba(196, 249, 4, 0.926);
 }
 
 
@@ -215,7 +216,7 @@ header:hover {
     margin: 4px;
     transform: scale(1.05);
     background: linear-gradient(#09fab6, #038cfc);
-     border-left: 3px solid #fc02b9;
+    border-left: 3px solid #fc02b9;
 }
 
 .education-col:hover {
@@ -391,33 +392,60 @@ p {
 
 
 
+
+
 .reviews-section {
-    padding-top: 20px;
+    padding: 20px;
+    background: linear-gradient(to right, #03f01c, #ece009);
+    margin-top: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(196, 249, 4, 0.764);
+    transition: all 0.3s ease;
+}
+
+.reviews-section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(223, 8, 147, 0.93);
+}
+
+.reviews-section h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1703fcff;
 }
 
 .cards-container {
     display: flex;
     justify-content: space-between;
     gap: 15px;
-    margin-top: 15px;
+
 }
 
 .review-card {
     flex: 1;
-    border: 2px solid #000000;
+    border: 3px solid #e908fe;
     border-radius: 25px;
-    transition: .4s;
+    box-shadow: 0px 10px 25px rgba(13, 88, 251, 0.884),
+        0 10px 10px rgba(10, 172, 242, 0.953);
+    transition: all.4s ease;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #06f1b6f7;
 }
 
 .review-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, .2);
+    border: #0505f9;
+    box-shadow: 0px 10px 25px rgb(2, 255, 225),
+        0 10px 10px rgb(4, 12, 254);
+    color: #051aff;
+
 }
 
 .review-text {
     font-family: Arial, sans-serif;
+    font-weight: bold;
     font-size: 0.85rem;
     margin-bottom: 10px;
 }
@@ -425,10 +453,18 @@ p {
 .author-name,
 .author-title {
     font-family: Arial, sans-serif;
-    font-size: 0.8rem;
-    color: #999999;
+    font-size: 1rem;
+    color: #fd0c03;
     margin-bottom: 0;
 }
+footer {
+    margin-top: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 20px;
+}
+
 
 @media(max-width:700px) {
 
