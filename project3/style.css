@@ -117,7 +117,7 @@ nav a:hover {
 header:hover {
 
     background: rgba(66, 232, 201, 0.94);
-     box-shadow:
+    box-shadow:
         0 12px 30px rgba(37, 99, 235, .45),
         0 0 25px rgba(56, 189, 248, .35);
 
@@ -145,13 +145,15 @@ header:hover {
         10px 20px rgba(10, 172, 242, 0.953);
 
 }
-.hero h1:hover{
+
+.hero h1:hover {
     color: #0d90fcf7;
     border: 2px solid #10f9edfa;
     background-color: #00ff73;
     box-shadow: 0px 12px 30px rgba(13, 88, 251, 0.884),
-       0 10px 20px rgba(10, 172, 242, 0.953);
+        0 10px 20px rgba(10, 172, 242, 0.953);
 }
+
 .hero p {
     font-family: Arial, sans-serif;
     color: #f6e658;
@@ -181,66 +183,141 @@ header:hover {
     text-align: center;
     color: #f80472;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
 }
 
-.projects-col:hover{
+.projects-col:hover {
     color: #02fcb5;
     border-radius: 10px;
     font-size: 17px;
     margin: 4px;
     transform: scale(1.05);
-    background: linear-gradient(#fc1ab0,#ff9100);
+    background: linear-gradient(#fc1ab0, #ff9100);
 }
+
 .center-col {
     display: flex;
     flex-direction: column;
-    border-right: 2px solid #000000;
+    border-right: 2px solid #0505f9;
+}
+
+.center-col:hover {
+    border-radius: 10px;
+    margin: 4px;
+    transform: scale(1.05);
+    background: linear-gradient(#09fab6, #038cfc);
+}
+
+.education-col:hover {
+    border-radius: 10px;
+    margin: 4px;
+    transform: scale(1.05);
+    background: linear-gradient(#09fab6, #038cfc);
 }
 
 .experience-box {
-    border-bottom: 2px solid #000000;
+    border-bottom: 3px dashed #cd02fa;
     flex: 1;
+    text-align: center;
+
+}
+
+.experience-box h2 {
+    color: #2d04fcda;
+    font-weight: bold;
+
+}
+
+.experience-box h3 {
+    color: #477ff9;
+}
+
+.experience-box p {
+
+    color: #0b6e69;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .opensource-box {
     flex: 1;
+    text-align: center;
+}
+
+.opensource-box h2 {
+    color: #fc044eda;
+    font-weight: bold;
+
+}
+
+.opensource-box p {
+    color: #0b6e69;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .education-col {
     padding-right: 0;
+    text-align: center;
 }
+
+.education-col h2 {
+    color: #fb2306;
+
+}
+
+.education-col p {
+    color: #1e5451;
+    font-weight: bold;
+    font-size: 14px;
+}
+
 
 
 h2 {
     font-size: 1.3rem;
-    font-weight: normal;
+    font-weight: bold;
     margin-bottom: 15px;
+
 }
 
-h3 {
-    font-size: 1.05rem;
-    font-weight: normal;
-    font-family: Arial, sans-serif;
-}
+
 
 p {
     font-family: Arial, sans-serif;
-    font-size: 0.9rem;
     line-height: 1.4;
     margin-bottom: 10px;
 }
 
-.link {
+
+
+
+
+.btn {
+    background: linear-gradient(rgba(10, 172, 242, 0.953), #0dd869);
+    padding: 10px;
+    border: 3px solid #02fcb5;
+    border-radius: 10px;
     font-family: Arial, sans-serif;
-    font-size: 0.8rem;
+    font-size: 14px;
     font-weight: bold;
-    color: #0066cc;
+    color: #f6f7f8;
+    cursor: pointer;
+    box-shadow:
+        0px 7px 14px rgba(251, 13, 227, 0.884),
+        0 4px 10px rgba(12, 62, 188, 0.953);
     text-decoration: none;
+    transition: all 0.3 ease;
 }
 
-.link:hover {
-    text-decoration: underline;
-    color: #ff5722;
+.btn:hover {
+    background: linear-gradient(to right, #fe08d1, #def603);
+    transform: translatey(-5px) scale(1.05);
+    color: #021af3;
+    font-size: 16px;
 }
 
 
@@ -251,18 +328,19 @@ p {
     border-radius: 10px;
     color: #f8d0fc;
     font-family: Arial, sans-serif;
-    box-shadow:0px 10px 25px rgba(13, 88, 251, 0.884),
-    0 10px 10px rgba(10, 172, 242, 0.953);
+    box-shadow: 0px 10px 25px rgba(13, 88, 251, 0.884),
+        0 10px 10px rgba(10, 172, 242, 0.953);
     font-size: 0.85rem;
-    background:linear-gradient(to right, #04fb4e ,#8a04fc);
+    background: linear-gradient(to right, #04fb4e, #8a04fc);
     transition: .3s;
     cursor: pointer;
+
 
 }
 
 .project-item:hover {
     transform: translateX(8px);
-    background: linear-gradient(to left, #6ad527 ,#0a02fb);
+    background: linear-gradient(to left, #6ad527, #0a02fb);
     font-weight: bold;
     color: white;
     font-size: 15px;
@@ -272,14 +350,37 @@ p {
 .courses-title {
     margin-top: 15px;
     margin-bottom: 5px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
 }
 
 .courses-list {
+    margin-top: 10px;
+    margin-left: 5px;
     list-style: none;
     font-family: Arial, sans-serif;
-    font-size: 0.85rem;
-    line-height: 1.5;
+    font-size: 14px;
+    padding-bottom: 4px;
+
 }
+
+.courses-list li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: left;
+    color: #051aff;
+    transition: all 0.3s ease;
+}
+
+.courses-list li:hover {
+    cursor: pointer;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+
+}
+
 
 
 .reviews-section {
